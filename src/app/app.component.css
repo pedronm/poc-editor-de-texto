@@ -14,9 +14,20 @@
 }
 
 .screen-center > ul  > li > a{
+
     padding: 1px;
     background-color: chocolate;
     color: white;
     text-decoration: none;
     padding: 0.789em;
+}
+
+.content{
+    display:flex;
+    flex-flow: column wrap;
+    flex: auto 1 1;    
+}
+
+.btn-view{
+    margin: 0.55em 0em 4em 0em;
 }
