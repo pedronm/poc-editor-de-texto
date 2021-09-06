@@ -8,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class QuillComponent implements OnInit {
 
   // A configuração pode ser direto no import 
-  // do móduo lá na AppModule
+  // do módulo lá na AppModule
   // ou elas podem ser direto no componente:
+  // 
   //   <quill-editor>
   //   <div quill-editor-toolbar>
   //     <span class="ql-formats">

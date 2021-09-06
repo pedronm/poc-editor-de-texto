@@ -1,11 +1,13 @@
 .screen-center{
     width: 100%;
     height: 30vh;
-    display: grid;
-    align-items: center;
+    display: flex;
+    align-items: flex-start;
 }
 
 .screen-center > ul  {
+    padding: 0;
+    margin:0;
     list-style: none;
 }
 
@@ -23,11 +25,20 @@
 }
 
 .content{
+    margin-top: 5em;
     display:flex;
-    flex-flow: column wrap;
+    flex-flow: row-reverse nowrap;
     flex: auto 1 1;    
+    
 }
 
 .btn-view{
-    margin: 0.55em 0em 4em 0em;
+    margin: 0;
+    padding: 0;
+}
+
+.router-view{
+    margin: 0;
+    width:85%;
+    height:55vh;
 }

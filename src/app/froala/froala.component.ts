@@ -59,14 +59,25 @@ export class FroalaComponent implements OnInit {
   public formulario : FormGroup = new FormGroup({})
    
   public options: Object = {
-    width: 500,
-    height:200,
+    height:250,
     charCounterCount: true,
-    toolbarButtons: ['bold', 'italic', 'underline', 'paragraphFormat','alert'],
-    toolbarButtonsXS: ['bold', 'italic', 'underline', 'paragraphFormat','alert'],
-    toolbarButtonsSM: ['bold', 'italic', 'underline', 'paragraphFormat','alert'],
-    toolbarButtonsMD: ['bold', 'italic', 'underline', 'paragraphFormat','alert'],
-  };
+  }
+    // Isso aqui é onde são definidos os botões da toolbar e 
+    // é bem interessante porque vocÊ define por tamanho da toolbar
+    // sendo o default : (≥ 1200px).
+    // Médio: = ou maior que 992px
+    // Pequeno: = ou maior que 768px
+    // Muito pequeno: que é menor que 768px
+    // é um tanto quanto um "lazy design", mas não deixa de ser simples. 
+    // Por fim, o '|' e o '-' adiciona separadores no menu
+    // toolbarButtons: ['bold', 'italic', 'underline', 'paragraphFormat','alert'],
+    // toolbarButtonsXS: ['bold', 'italic', 'underline', 'paragraphFormat','alert'],
+    // toolbarButtonsSM: ['bold', 'italic', 'underline', 'paragraphFormat','alert'],
+    // toolbarButtonsMD: ['bold', 'italic', 'underline', 'paragraphFormat','alert'],
+
+    // A parte ruim; aqui funciona como o editor antigo, todos botões são plugins
+    // que devem ser importados.
+  
 
   public onSubmit(){}
 
