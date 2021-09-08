@@ -1,21 +1,22 @@
-.screen-center{
-    width: 100%;
+.btn-view{
+    width: 20%;
     height: 30vh;
     display: flex;
     align-items: flex-start;
+    padding-top: 4em;
 }
 
-.screen-center > ul  {
+.btn-view > ul  {
     padding: 0;
-    margin:0;
+    margin-top:1em;
     list-style: none;
 }
 
-.screen-center > ul  > li {
+.btn-view > ul  > li {
     margin: 2em 0em;
 }
 
-.screen-center > ul  > li > a{
+.btn-view > ul  > li > a{
 
     padding: 1px;
     background-color: chocolate;
@@ -30,6 +31,23 @@
     flex-flow: row-reverse nowrap;
     flex: auto 1 1;    
     
+    
+}
+
+@media screen and (max-width: 833px) {
+    .content{
+        flex-flow: row wrap;
+    }
+    .content .btn-view{
+        width: fit-content;
+        height: auto;
+        margin-left: 0.43em;
+        margin-bottom: 0.58em;
+    }
+
+    .content .btn-view ul  li{
+        display: inline;
+    }
 }
 
 .btn-view{
