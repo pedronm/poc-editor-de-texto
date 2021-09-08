@@ -10,7 +10,7 @@ const routes = [
   {path: 'quill-editor', component: QuillComponent},
   {path: 'froala-editor', component: FroalaComponent},
   {path: 'angular-editor', component: AngularEditorComponent},
-  {path: 'ngrx-editor', component: NgRxComponent}
+  {path: 'ngx-editor', component: NgRxComponent}
 ]
 
 @NgModule({
